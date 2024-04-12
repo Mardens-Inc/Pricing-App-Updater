@@ -1,9 +1,8 @@
-﻿#include <iostream>
-#include <filesystem>
+﻿#include <filesystem>
 #include <string>
 
-int main(int argc, char *argv[]) {
 
+int main(int argc, char *argv[]) {
     // check if the correct number of arguments are passed
     if (argc <= 2) {
         // set the color of the output to red
@@ -35,7 +34,6 @@ int main(int argc, char *argv[]) {
     }
 
     try {
-
         // kill the current exe
         std::string command = "taskkill /F /IM pricing-app.exe";
         system(command.c_str());
